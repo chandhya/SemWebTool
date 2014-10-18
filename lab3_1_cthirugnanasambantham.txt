@@ -1,0 +1,33 @@
+#Query <1> 
+PREFIX vCard:<http://www.w3.org/2001/vcard-rdf/3.0#>
+SELECT ?s WHERE { 
+?s vCard:FN 'John Smith'
+}
+
+#Query <2> 
+PREFIX info:<http://somewhere/peopleInfo#>
+SELECT ?o where{
+?s info:age ?o
+}
+
+#Query <3> 
+PREFIX info:<http://somewhere/peopleInfo#>
+SELECT ?s ?o where{
+?s info:age ?o
+}
+
+#Query <4> 
+PREFIX vCard:<http://www.w3.org/2001/vcard-rdf/3.0#>
+PREFIX info:<http://somewhere/peopleInfo#>
+SELECT ?age ?name where{
+?s info:age ?age.
+         FILTER(?age='23') ?s vCard:FN ?name
+}
+
+#Query <5> 
+PREFIX vCard:<http://www.w3.org/2001/vcard-rdf/3.0#>
+PREFIX info:<http://somewhere/peopleInfo#>
+SELECT ?given ?age where{
+?s info:age ?age.?s vCard:N ?o.?o vCard:Given ?given
+}
+

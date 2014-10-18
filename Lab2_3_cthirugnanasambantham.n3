@@ -1,0 +1,59 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix Movie:   <http://utdallas/semclass#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard:   <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+Movie:Movie
+      a       owl:Class .
+
+<http://utdallas/semclass#Dr. Strangelove>
+      a       Movie:Movie ;
+      Movie:Director
+              [ vcard:NAME "Stanley Kubrick" ;
+                vcard:ROLE "Director"
+              ] ;
+      Movie:Name "Dr. Strangelove"^^xsd:string ;
+      Movie:Year "1964"^^xsd:long ;
+      Movie:bookMadeMovie
+              [ <http://purl.org/dc/terms/creator>
+                        [ vcard:NAME "Peter George" ;
+                          vcard:ROLE "Author"
+                        ] ;
+                <http://purl.org/dc/terms/title>
+                        "Red Alert"
+              ] .
+
+Movie:Director
+      a       owl:ObjectProperty ;
+      rdfs:domain Movie:Movie .
+
+<http://utdallas/semclass#Clockwork Orange>
+      a       Movie:Movie ;
+      Movie:Director
+              [ vcard:NAME "Stanley Kubrick" ;
+                vcard:ROLE "Director"
+              ] ;
+      Movie:Name "Clockwork Orange"^^xsd:string ;
+      Movie:Year "1971"^^xsd:long ;
+      Movie:bookMadeMovie
+              [ <http://purl.org/dc/terms/creator>
+                        [ vcard:NAME "Peter George" ;
+                          vcard:ROLE "Author"
+                        ] ;
+                <http://purl.org/dc/terms/title>
+                        "Red Alert"
+              ] .
+
+Movie:Name
+      a       owl:DatatypeProperty ;
+      rdfs:domain Movie:Movie .
+
+Movie:Year
+      a       owl:DatatypeProperty ;
+      rdfs:domain Movie:Movie .
+
+Movie:bookMadeMovie
+      a       owl:ObjectProperty ;
+      rdfs:domain Movie:Movie .

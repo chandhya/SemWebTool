@@ -1,0 +1,31 @@
+_:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fcf <http://purl.org/dc/terms/title> "Red Alert" .
+_:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fd2 <http://purl.org/dc/terms/title> "Red Alert" .
+_:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fcf <http://purl.org/dc/terms/creator> _:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fce .
+<http://utdallas/semclass#Dr. Strangelove> <http://utdallas/semclass#Year> "1964"^^<http://www.w3.org/2001/XMLSchema#long> .
+<http://utdallas/semclass#Dr. Strangelove> <http://utdallas/semclass#Director> _:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fd0 .
+_:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fd0 <http://www.w3.org/2001/vcard-rdf/3.0#NAME> "Stanley Kubrick" .
+_:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fcd <http://www.w3.org/2001/vcard-rdf/3.0#NAME> "Stanley Kubrick" .
+<http://utdallas/semclass#Movie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://utdallas/semclass#bookMadeMovie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://utdallas/semclass#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://utdallas/semclass#Year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://utdallas/semclass#Name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://utdallas/semclass#Dr. Strangelove> <http://utdallas/semclass#Name> "Dr. Strangelove"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://utdallas/semclass#Clockwork Orange> <http://utdallas/semclass#Name> "Clockwork Orange"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://utdallas/semclass#Clockwork Orange> <http://utdallas/semclass#Director> _:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fcd .
+_:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fce <http://www.w3.org/2001/vcard-rdf/3.0#ROLE> "Author" .
+_:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fd1 <http://www.w3.org/2001/vcard-rdf/3.0#ROLE> "Author" .
+_:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fd0 <http://www.w3.org/2001/vcard-rdf/3.0#ROLE> "Director" .
+_:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fcd <http://www.w3.org/2001/vcard-rdf/3.0#ROLE> "Director" .
+_:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fd2 <http://purl.org/dc/terms/creator> _:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fd1 .
+_:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fce <http://www.w3.org/2001/vcard-rdf/3.0#NAME> "Peter George" .
+_:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fd1 <http://www.w3.org/2001/vcard-rdf/3.0#NAME> "Peter George" .
+<http://utdallas/semclass#bookMadeMovie> <http://www.w3.org/2000/01/rdf-schema#domain> <http://utdallas/semclass#Movie> .
+<http://utdallas/semclass#Year> <http://www.w3.org/2000/01/rdf-schema#domain> <http://utdallas/semclass#Movie> .
+<http://utdallas/semclass#Director> <http://www.w3.org/2000/01/rdf-schema#domain> <http://utdallas/semclass#Movie> .
+<http://utdallas/semclass#Name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://utdallas/semclass#Movie> .
+<http://utdallas/semclass#Dr. Strangelove> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://utdallas/semclass#Movie> .
+<http://utdallas/semclass#Clockwork Orange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://utdallas/semclass#Movie> .
+<http://utdallas/semclass#Clockwork Orange> <http://utdallas/semclass#bookMadeMovie> _:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fcf .
+<http://utdallas/semclass#Dr. Strangelove> <http://utdallas/semclass#bookMadeMovie> _:AX2dX1db5b792X3aX14149bc226bX3aXX2dX7fd2 .
+<http://utdallas/semclass#Clockwork Orange> <http://utdallas/semclass#Year> "1971"^^<http://www.w3.org/2001/XMLSchema#long> .

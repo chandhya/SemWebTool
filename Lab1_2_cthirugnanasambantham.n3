@@ -1,0 +1,11 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vcard:   <http://www.w3.org/2001/vcard-rdf/3.0#> .
+
+<http://utdallas/semclass>
+      vcard:BDAY "01/01/1901" ;
+      vcard:EMAIL "steven.seida@utdallas.edu" ;
+      vcard:FN "Steven Seida" ;
+      vcard:N [ vcard:Family "Seida" ;
+                vcard:Given "Steven"
+              ] ;
+      vcard:ROLE "Senior Lecturer" .

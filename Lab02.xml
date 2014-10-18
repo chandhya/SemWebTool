@@ -1,0 +1,57 @@
+<rdf:RDF
+    xmlns:BookMadeIntoMovie="http://utdallas/semclass#bookMadeMovie"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:Movie="http://utdallas/semclass#"
+    xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.0="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Class rdf:about="http://utdallas/semclass#Movie"/>
+  <owl:ObjectProperty rdf:about="http://utdallas/semclass#Director">
+    <rdfs:domain rdf:resource="http://utdallas/semclass#Movie"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://utdallas/semclass#bookMadeMovie">
+    <rdfs:domain rdf:resource="http://utdallas/semclass#Movie"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://utdallas/semclass#Name">
+    <rdfs:domain rdf:resource="http://utdallas/semclass#Movie"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://utdallas/semclass#Year">
+    <rdfs:domain rdf:resource="http://utdallas/semclass#Movie"/>
+  </owl:DatatypeProperty>
+  <Movie:Movie rdf:about="http://utdallas/semclass#Dr. Strangelove">
+    <Movie:bookMadeMovie rdf:parseType="Resource">
+      <j.0:title>Red Alert</j.0:title>
+      <j.0:creator rdf:parseType="Resource">
+        <vcard:ROLE>Author</vcard:ROLE>
+        <vcard:NAME>Peter George</vcard:NAME>
+      </j.0:creator>
+    </Movie:bookMadeMovie>
+    <Movie:Director rdf:parseType="Resource">
+      <vcard:ROLE>Director</vcard:ROLE>
+      <vcard:NAME>Stanley Kubrick</vcard:NAME>
+    </Movie:Director>
+    <Movie:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >1964</Movie:Year>
+    <Movie:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Dr. Strangelove</Movie:Name>
+  </Movie:Movie>
+  <Movie:Movie rdf:about="http://utdallas/semclass#Clockwork Orange">
+    <Movie:bookMadeMovie rdf:parseType="Resource">
+      <j.0:title>Red Alert</j.0:title>
+      <j.0:creator rdf:parseType="Resource">
+        <vcard:ROLE>Author</vcard:ROLE>
+        <vcard:NAME>Peter George</vcard:NAME>
+      </j.0:creator>
+    </Movie:bookMadeMovie>
+    <Movie:Director rdf:parseType="Resource">
+      <vcard:ROLE>Director</vcard:ROLE>
+      <vcard:NAME>Stanley Kubrick</vcard:NAME>
+    </Movie:Director>
+    <Movie:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >1971</Movie:Year>
+    <Movie:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Clockwork Orange</Movie:Name>
+  </Movie:Movie>
+</rdf:RDF>
